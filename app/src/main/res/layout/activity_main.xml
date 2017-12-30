@@ -6,56 +6,90 @@
     android:layout_height="match_parent"
     tools:context="com.example.a4554551n.myapplication.MainActivity">
 
-    <Button
-        android:id="@+id/anwers4"
-        android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="445dp" />
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="495dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/anwers3"
-        android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="381dp" />
+        <RadioGroup
+            android:id="@+id/radiogroup1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
-    <Button
-        android:id="@+id/anwers2"
-        android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="315dp" />
+            <TextView
+                android:id="@+id/txtQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="25dp" />
 
-    <Button
-        android:id="@+id/anwers1"
-        android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="245dp" />
+            <RadioButton
+                android:id="@+id/rtbOptionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RadioButton"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="89dp" />
 
-    <TextView
-        android:id="@+id/scroe"
-        android:layout_width="368dp"
-        android:layout_height="48dp"
-        android:text="TextView"
-        android:textSize="24dp"
-        android:gravity="center"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp" />
+            <RadioButton
+                android:id="@+id/rtbOptionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RadioButton"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="160dp" />
 
-    <TextView
-        android:id="@+id/question"
-        android:layout_width="368dp"
-        android:layout_height="150dp"
-        android:layout_marginBottom="22dp"
-        android:text="TextView"
-        android:textSize="24dp"
-        android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/anwers1"
-        tools:layout_editor_absoluteX="8dp" />
+            <RadioButton
+                android:id="@+id/rtbOptionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RadioButton"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="239dp" />
+
+            <RadioButton
+                android:id="@+id/rtbOptionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RadioButton"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="323dp" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="NEXT"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="412dp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

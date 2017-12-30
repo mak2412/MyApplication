@@ -2,45 +2,83 @@ package com.example.a4554551n.myapplication;
 
 public class Questions {
 
-    public String mQuestions [] = {
-            "ข้อใดต่อไปนี้เป็นชื่อท้องถิ่นของแปรงล้างขวด",
-            "ข้อใดต่อไปนี้เป็นชื่อท้องถิ่นของแปรงล้างขวด",
-            "ข้อใดต่อไปนี้เป็นชื่อท้องถิ่นของแปรงล้างขวด",
-            "ข้อใดต่อไปนี้เป็นชื่อท้องถิ่นของแปรงล้างขวด",
-            "ข้อใดต่อไปนี้เป็นชื่อท้องถิ่นของแปรงล้างขวด"
-    };
-    private String mChoices [] [] = {
-            {"ปิดจงวา","หลิวดอก","มะต้อง","ก้ามปู"},
-            {"ปิดจงวา","หลิวดอก","มะต้อง","ก้ามปู"},
-            {"ปิดจงวา","หลิวดอก","มะต้อง","ก้ามปู"},
-            {"ปิดจงวา","หลิวดอก","มะต้อง","ก้ามปู"},
-            {"ปิดจงวา","หลิวดอก","มะต้อง","ก้ามปู"}
-    };
-    private String mCorrecAnwers [] = {"ปิดจงวา","หลิวดอก","มะต้อง","ก้ามปู"};
+    private int ID;
+    private String Question,Answer, optionA, optionB, optionC, optionD;
 
-    public String getQuestions(int a){
-        String question = mQuestions[a];
-        return question;
-    }
-    public  String getChoices1(int a){
-        String choice = mChoices[a][0];
-        return choice;
-    }
-    public  String getChoices2(int a){
-        String choice = mChoices[a][1];
-        return choice;
-    }
-    public  String getChoices3(int a){
-        String choice = mChoices[a][2];
-        return choice;
-    }
-    public  String getChoices4(int a){
-        String choice = mChoices[a][3];
-        return choice;
+    public Questions() {
+        ID = 0;
+        Question = "";
+        optionA = "";
+        optionB = "";
+        optionC = "";
+        optionD = "";
+        Answer = "";
     }
 
-    public String getCorrecAnwer(int a){
-        String anwer = mCorrecAnwers[a];
-        return anwer;
+    public Questions( String Question, String Answer, String optionA, String optionB, String optionC,
+                    String optionD) {
+        this.Question = Question;
+        this.optionA = optionA;
+        this.optionB = optionB;
+        this.optionC = optionC;
+        this.optionD = optionD;
+        this.Answer = Answer;
+
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public String getQuestion() {
+        return Question;
+    }
+
+    public String getOptionA() {
+        return optionA;
+    }
+
+    public String getOptionB() {
+        return optionB;
+    }
+
+    public String getOptionC() {
+        return optionC;
+    }
+
+    public String getOptionD() {
+        return optionD;
+    }
+
+    public String getAnswer() {
+        return Answer;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
+    public void setQuestion(String Question) {
+        this.Question = Question;
+    }
+
+    public void setOptionA(String optionA) {
+        this.optionA = optionA;
+    }
+
+    public void setOptionB(String optionB) {
+        this.optionB = optionB;
+    }
+
+    public void setOptionC(String optionC) {
+        this.optionC = optionC;
+    }
+
+    public void setOptionD(String optionD) {
+        this.optionD = optionD;
+    }
+
+    public void setAnswer(String answer) {
+        Answer = answer;
     }
 }
