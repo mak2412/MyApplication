@@ -70,6 +70,17 @@ public class MainActivity extends AppCompatActivity {
                 if (currentQuestion.getAnswer().equals(answer.getText())){
                     score++;
                     Log.d("score ", "you score "+score);
+                    AlertDialog.Builder builder =new AlertDialog.Builder(MainActivity.this);
+                    builder.setMessage("คำตอบถูกต้อง")
+                    .setPositiveButton("ok",null);
+                    builder.show();
+                }
+                else if (currentQuestion.getAnswer().equals(answer.getText())== false){
+                    Log.d("score ", "you score "+score);
+                    AlertDialog.Builder builder =new AlertDialog.Builder(MainActivity.this);
+                    builder.setMessage("คำตอบผิด "+currentQuestion.getAnswer())
+                    .setPositiveButton("ok",null);
+                    builder.show();
                 }
                 if (questionID<5){
                     currentQuestion = questionList.get(questionID);
